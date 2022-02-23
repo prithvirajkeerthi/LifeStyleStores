@@ -1,0 +1,115 @@
+.title
+{
+    font-size: 32px;
+    font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+font-weight: normal;      
+}
+.dealbox{
+ width:100%;
+ height: auto;
+ display: grid;
+ grid-template-rows: 1fr;
+ grid-template-columns: repeat(6,1fr);
+ gap: 10px;
+}
+
+body{
+ margin:100px;
+}
+.dealImg{
+ width:100%;
+}
+.divider{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    
+   }
+.productcard{
+    width:100%;
+   margin:150px 5px;
+    display: block;
+   }
+   .categoryitems{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(6,1fr);
+    height: auto;
+    width: auto;
+    gap: 8px;
+   }
+   .shopCategory{
+   color: #000000;
+   text-align: center;
+   font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+   font-weight: bold;
+   line-height: 2;
+   margin-top: 10px;
+   }
+   .offerimg{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+   }
+   
+   .teen{
+    width:100%;
+    height: auto;
+   }
+   
+   .topselling{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+   }
+   .flashsale{
+    width:100%;
+   margin:20px 5px;
+    display: block;
+    
+   }
+   .beststeals{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+   }
+   .beststealsdiv{
+    width:100%;
+    height: auto;
+   }
+   #departmentitems{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+   }
+   
+   .departmentdiv{
+    width:100%;
+    height: auto;
+   }
+   /* .shopnow{
+    padding: 20px;
+    width: 60%;
+   
+   
+     
+   } */
+   .shopnowstyle{
+    background-color: white;
+    border: 1px solid rgb(223, 194, 194);
+    color: orange;
+    padding: 10px;
+    width: 40%;
+
+   }
