@@ -1,0 +1,180 @@
+#layer1{
+    height: auto;
+    padding-left: 100px;
+  
+}
+.inner-div2{
+    display:flex;
+    gap: 20px;
+}
+.inner-div2 > div{
+    height:200px;
+    border: 3px solid black;
+    width: 200px;
+}
+.layer1-img{
+    height: 100%;
+    width: 100%;
+}
+#layer2{
+    height: auto;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+.div1{
+    display:flex;
+    gap: 20px;
+}
+.div1 > div{
+    height: 200px;
+   width: 200px;
+}
+.layer2-img{
+    height: 100%;
+    width: 100%;
+}
+.div1 > div > p{
+    text-align: center;
+    font-weight: bold;
+}
+.div2{
+    display:flex;
+    gap: 20px;
+    padding-top: 50px;
+}
+.div2 > div{
+    height: 200px;
+   width: 200px;
+}
+.div2 > div > p{
+    text-align: center;
+    font-weight: bold;
+}
+#layer3{
+    padding-top: 50px;
+    height: auto;
+    width: auto;
+    padding-left: 150px;
+}
+#layer3 > img{
+    justify-content: center;
+}
+#layer4{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+.inn1{
+    display:flex;
+    gap: 20px;
+}
+.inn1 > div{
+    height: 200px;
+    width: 200px;
+}
+.inn1-img{
+    height: 100%;
+    width: 100%;
+}
+#layer5{
+    padding-left: 100px;
+    padding-top: 30px;
+    height:auto
+}
+.inner-box{
+    display:flex;
+    gap:20px;
+}
+.inner-box > div{
+    height:200px;
+    width: 200px;
+}
+.layer5-img{
+    height: 100%;
+    width: 100%;
+}
+#layer6{
+    padding-left: 100px;
+    padding-top: 30px;
+    height:auto
+}
+.layer6-box{
+    display: flex;
+    gap: 20px;
+}
+.layer6-box > div{
+    height: 400px;
+    width: 400px;
+}
+.layer6-img{
+    height: 100%;
+    width: 100%;
+}
+#layer7{
+    padding-left: 100px;
+    padding-top: 30px;
+    height:auto
+}
+.layer7-box{
+    display: flex;
+    gap: 20px;
+}
+.layer7-box > div{
+    height: 400px;
+    width: 400px;
+}
+.layer7-img{
+    height: 100%;
+    width: 100%;
+}
+#layer8{
+    padding-top: 30px;
+    padding-left: 100px;
+    height: auto;
+}
+.layer8-box{
+    display: flex;
+    gap: 20px;
+}
+.layer8-box > div{
+    height: 250px;
+    width: 250px;
+}
+.layer8-img{
+    height: 100%;
+    width: 100%;
+}
+.layer8-box > div > p{
+    font-weight: bold;
+}
+#layer9{
+    padding-left: 100px;
+    padding-top: 30px;
+}
+.layer9-box{
+    display: flex;
+    gap: 20px;
+}
+.layer9-box > div{
+    height: 500px;
+    width: 600px;
+}
+.layer9-img{
+    height: 100%;
+    width: 100%;
+}
+#layer10{
+    padding-left: 100px;
+    padding-top: 30px;
+}
+.layer10-box{
+    display: flex;
+    gap: 20px;
+}
+.layer10-box > div{
+    height: 210px;
+    width: 450px;
+}
+.layer10-img{
+    height: 100%;
+    width: 100%;
+}
