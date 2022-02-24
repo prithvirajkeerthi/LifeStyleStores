@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ada446efc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8ada446efc.js" crossorigin="anonymous"></script>
+
+
+    <title>Life Style Stores</title>
+    <style>
+        *{
+          font-family: sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+        }
+
+        #container{
+              padding-left: 0px;
+        
+         margin: auto; 
+        }
+      
+        #box1{
+            background-color: rgb(0,0,0);
+            display: flex;
+            gap: 20px;
+            /* padding-left: 30px; */
+           
+            /* gap: 20px; */
+            
+            
+        }
+        #lifestyle>img{
+            height: 60px;
+            width: 190px;
+
+        }
+        #box2{
+            background-color: rgb(0,0,0);
+            display: flex;
+            gap: 20px;
+            margin-right: 30px;
+           
+          
+        }
+        #first{
+            display: flex;
+            gap: 5px;
+        }
+        #second{
+            display: flex;
+            gap: 5px;
+        }
+        #third{
+            display: flex;
+            gap: 5px;
+        }
+       #box1>div> h4{
+            color: rgb(255,255,255);
+        }
+        #flex1{
+            display: flex;
+            justify-content: space-between;
+            background-color:rgb(0,0,0) ;
+            color:rgb(255,255,255);
+            }
+         .border>h5{ 
+             /* display: flex; */
+             /* border-right: 3px solid white; */
+             /* height: 20px; */
+             /* gap: 20px;  */
+             align-items: center;
+             margin-left: 40px;
+             /* justify-content: space-between; */
+             /* justify-content: space-between; */
+
+        }
+        #shadow{
+            /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+            /* width: 60px; */
+            display: flex;
+            border: 3px solid white;
+            gap: 9px;
+            
+            
+        
+        }
+        
+      .line4{ 
+           
+           /* border-right: 3px solid rgb(93,94,92); */
+           height: 20px;
+           gap: 20px; 
+           align-items: center; 
+           margin-left: 3px;
+           position: absolute;
+           right: 100px;
+           top: 30px;
+           
+          
+           /* justify-content: space-between; */
+
+      }
+      
+        #flex2{
+            display: flex;
+            justify-content: space-between;
+            background-color: #f7f8f7;
+            
+        }
+        #container>#flex2{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        #flex2>div{
+            color: rgb(26,25,24);
+            
+
+        }
+        #box4{
+            display: flex;
+            gap: 20px;
+            padding-right: 20px;
+        }
+        #box3{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+  
+        #basket{
+            display: flex;
+            gap: 10px;
+        }
+        .png{
+            margin-top: 20px;
+        }
+        /* new css */
+        .free{
+            display: flex;
+            gap: 6px;
+        }
+        .click{
+            display: flex;
+            gap: 6px;
+        }
+        .return{
+            display: flex;
+            gap: 6px;
+        }
+        .png{
+            margin-top: 20px;
+        }
+        .line1{ 
+           
+           border-right: 3px solid rgb(93,94,92);
+           height: 20px;
+           gap: 20px; 
+           align-items: center; 
+           margin-left: 3px;
+           position: absolute;
+           right: 200px;
+           top: 30px;
+        }
+        .line2{ 
+           
+           border-right: 3px solid rgb(93,94,92);
+           height: 20px;
+           gap: 20px; 
+           align-items: center; 
+           margin-left: 3px;
+           position: absolute;
+           right: 80px;
+           top: 30px;
+        }
+        .png2{
+            margin-top: 9px;
+
+        }
+        /* .all{
+            padding-right: 10px;
+        }
+           */
+          
+
+      
+        #left{
+            display: flex;
+            gap: 30px;
+            margin-left: 50px;
+        }
+        #right{
+            display: flex;
+            gap: 40px;
+            margin-right: 20px;
+        }
+
+        #searchbar{
+            background-color: #ecedeb;
+            margin-left: 30px;
+            font-size: 16px;
+            height: 35px;
+            padding-left: 20px;
+            width: 400px;
+            border: 0px;
+        }
+         
+        .border2{
+          display: flex;
+          gap: 20px;
+          align-items: center;
+        }
+
+                    /* Drop - Down Part */
+
+          
+  .dropbtn {
+  background-color: white;
+  /* color: white; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 450px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  /* background-color: #3e8e41; */
+  border: 1px solid goldenrod;
+  color: goldenrod;
+}
+
+#spang{
+  float: right;
+}
+
+#patti{
+  background-color:goldenrod;
+  height: 40px;
+  width: 100%;
+  display: flex;
+}
+
+#patti > h2{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 35%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div id="container">
+<!-- navbar cha div flex1 -->
+        <div id="flex1">
+
+            <div id="left">
+                <div class="free">
+                    <div class="png"><i class="fa-solid fa-truck"></i> </div>
+                    <div><h4>Free Shipping</h4></div>
+                </div>
+                <div class="click">
+                    <div class="png"> <i class="fa-solid fa-shop"></i></div>
+                    <div><h4>Click & Collect</h4></div>
+                </div>
+                <div class="return">
+                    <div class="png">  <i class="fa-solid fa-shop"></i>
+                    </div>
+                    <div><h4>Return To Store</h4></div>
+                </div>
+
+            </div>
+            <!-- right div dusra  -->
+            <div id="right">
+                <div class="download"> <h5>Download Our Apps</h5></div>
+                <div class="line1"></div>
+                <div class="store"> <h5>Store Locator</h5></div>
+                <div class="line2"></div>
+                <div class="help"><h5>Help</h5></div>
+            </div>
+
+            
+
+        </div>
+        
+        <div id="flex2">
+            <div id="box3">
+                <div id="lifestyle">
+                    <!-- <span class="MuiIconButton-label"></span>            -->
+                    <!-- <a class="MuiButtonBase-root MuiIconButton-root jss31" tabindex="0" aria-disabled="false" aria-label="lifestyle" href="/in/en/" height="35x"><span class="MuiIconButton-label"></span></a> -->
+                    <!-- <h1>Lifestyle</h1> -->
+                    <img src="https://blog.lifestylestores.com/wp-content/uploads/2021/02/Lifestyle-Logo-640x245-1.webp" alt="">
+                     </div>
+                     
+                        <div>
+                            <h4><a href="">Women</a></h4>
+                        </div>
+                        <div id="men">
+                            <h4><a href="">Men</a></h4>
+                        </div>
+                        <div>
+                            <h4><a href="">Kids</a></h4>
+                        </div>
+                        <div>
+                            <h4 ><a href="">Shoes & Bags</a></h4>
+                        </div>
+                     
+                
+                <div id="shadow">
+                    <div class="png2"> <i class="fa-solid fa-magnifying-glass"></i></div>
+                   
+                   
+                  <input type="text" placeholder="What you are looking for?" id="searchbar">
+                </div>
+            </div>
+
+            <div id="box4">
+                <div class="border2">
+                    <div>
+                      <a href="signIn.html">Sign-In</a>
+                    </div>
+                    <div>
+                      <a href="signUp.html">Sign-Up</a>
+                    </div>
+
+                </div>
+                <div class="line4"></div>
+               
+                <div id="basket">
+                    <h3>Basket</h3>
+                    <div class="png">
+                        <i class="fa-solid fa-basket-shopping"></i>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>     
+       
+    </div>
+
+
+
+                      <!-- Drop-Down Part -->
+
+                      
+                      <div class="dropdown">
+                        <button class="dropbtn">Ethnic & Fusion Wear</button>
+                        <div class="dropdown-content">
+                          <p>Kurtas & Kurtis <span id="spang">Kurtas Sets</span></p>
+                          <p>Ethnic Sets <span id="spang">Dupattas & Stoles</span></p>
+                          <p>Ethnis Dresses <span id="spang">Skirts</span></p>
+                          <p>Tops & Tunics <span id="spang">Kurtas Under 999</span></p>
+                          <p>Leggings & Churidars <span id="spang">Leggings Starting 499</span></p>
+                          <p>Pants & Palazzos <span id="spang">Kurta Sets Starting 1099</span></p>
+                        </div>
+                      </div>
+                      
+                      <div class="dropdown">
+                        <button class="dropbtn">Western Wear</button>
+                        <div class="dropdown-content">
+                          <p> Tops<span id="spang">Jeans</span></p>
+                          <p>Tees<span id="spang">Skirts</span></p>
+                          <p>Dresses <span id="spang"> Shorts </span></p>
+                          <p> Shirts <span id="spang">Trousers</span></p>
+                          <p>Jumpsuits & Playsuits <span id="spang">Leggings</span></p>
+                          <p>Shrugs <span id="spang">Sweatshirt</span></p>
+                        </div>
+                      </div>
+                      
+                      <div class="dropdown">
+                        <button class="dropbtn">Lingerie/SleepWear</button>
+                        <div class="dropdown-content">
+                          <p> Bras<span id="spang">Bottoms</span></p>
+                          <p>Briefs/Panties<span id="spang">Bras Under 599</span></p>
+                          <p>Sleepwear & Longuewear<span id="spang">Panties Starting 239</span></p>
+                          <p>Dresses & Gowns<span id="spang">Sleepwear Starting 299</span></p>
+                          <p>Shapewear<span id="spang">Longuewear Starting 499</span></p>
+                          <p>Tops<span id="spang">Sleep Tops Under 999</span></p>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="dropdown">
+                        <button class="dropbtn">Top Brands</button>
+                        <div class="dropdown-content">
+                          <p>Melange<span id="spang">Nexus</span></p>
+                          <p>Ginger<span id="spang">SmileyWorld</span></p>
+                          <p>Code<span id="spang">Puma</span></p>
+                          <p>Fame Forever<span id="spang">Levi's</span></p>
+                          <p>Kappa<span id="spang">Biba</span></p>
+                          <p>Bossini<span id="spang">Aurelia</span></p>
+                        </div>
+                      </div>
+                      
+                      <div class="dropdown">
+                        <button class="dropbtn">SportsWear</button>
+                        <div class="dropdown-content">
+                          <p>Tops & Tees<span id="spang">Sports Shoes</span></p>
+                          <p>Sports Bras<span id="spang">Fitness Brands</span></p>
+                          <p>Joggers & Tracks<span id="spang">Sports Brands Starting at 449</span></p>
+                          <p>Tights<span id="spang">Sports Shoes Starting 1399</span></p>
+                          <p>Sweatshirts<span id="spang">Sports Tops Starting 249</span></p>
+                          <p>Jackets<span id="spang">Joggers and Tracks</span></p>
+                        </div>
+                      </div>  
+
+                      <div class="dropdown">
+                        <button class="dropbtn">PlusSize</button>
+                        <div class="dropdown-content">
+                          <p>Tops<span id="spang">Tops Starting 499</span></p>
+                          <p>Bottoms<span id="spang">Bottoms starting 999</span></p>
+                          <p>Dresses and Jumpsuits<span id="spang">XL+ Dress Store</span></p>
+                          <p>Winter Wear<span id="spang">XXL Sports Wear</span></p>
+                          <p>Lingerie<span id="spang">3XL Ethnic Sports</span></p>
+                          <p>Sleepwear & Longuewear<span id="spang">4XL Stores</span></p>
+                        </div>
+                      </div>  
+
+                      <div class="dropdown">
+                        <button class="dropbtn">WinterWear</button>
+                        <div class="dropdown-content">
+                          <p> Cardigans & Shrugs<span id="spang"> </span></p>
+                          <p> Sweaters<span id="spang"> </span></p>
+                          <p> Sweatshirts and Hoodies<span id="spang">  </span></p>
+                          <p> Jackets & Coats<span id="spang"> </span></p>
+                          <p> Sweaters & Cardigans<span id="spang"> </span></p>
+                        </div>
+                      </div>  
+
+                      <div class="dropdown">
+                        <button class="dropbtn">SizeStore</button>
+                        <div class="dropdown-content">
+                          <p>XS<span id="spang">30</span></p>
+                          <p>Small<span id="spang">32</span></p>
+                          <p>Medium<span id="spang">34</span></p>
+                          <p>Large<span id="spang">36</span></p>
+                          <p>XL<span id="spang">38</span></p>
+                          <p>XXL<span id="spang">40</span></p>
+                        </div>
+                      </div>  
+
+                      <div class="dropdown">
+                        <button class="dropbtn">Beauty</button>
+                        <div class="dropdown-content">
+                          <p>Lips<span id="spang">Tools & Accessories</span></p>
+                          <p>Face<span id="spang">Fragrances</span></p>
+                          <p>Eye<span id="spang">Perfumes</span></p>
+                          <p>Nail<span id="spang">Deodrants</span></p>
+                          <p>Skincare<span id="spang">Nail Polish under 199</span></p>
+                          <p>Bath & Body<span id="spang">Lipsticks under 499</span></p>
+                        </div>
+                      </div>  
+
+                      <div class="dropdown">
+                        <button class="dropbtn">Watches</button>
+                        <div class="dropdown-content">
+                          <p>Smart Watches<span id="spang">Casio</span></p>
+                          <p>Analog Watches<span id="spang">Fossils</span></p>
+                          <p>Chronograph Watches<span id="spang">Titan</span></p>
+                          <p>Fitness Brands<span id="spang">Tommy Hilfiger</span></p>
+                          <p>Sunglasses<span id="spang">Online Gift Cards</span></p>
+                          <p>Face Masks<span id="spang">Offline Gift Cards</span></p>
+                        </div>
+                      </div>  
+
+                      <div class="dropdown">
+                        <button class="dropbtn">More</button>
+                        <div class="dropdown-content">
+                          <p>Download App<span id="spang"> </span></p>
+                          <p>Online Gift Cards<span id="spang"> </span></p>
+                          <p>Store Locator<span id="spang">  </span></p>
+                          <p>Store Details<span id="spang"> </span></p>
+                          <p>Lifestyle EDGE<span id="spang"> </span></p>
+                          <p>BLOG<span id="spang"> </span></p>
+                        </div>
+                      </div>
+
+                      <div id="patti">
+                        <h2>Up To 60% Off + Extra 20% Off + Free Shipping on All Orders > ></h2>
+                      </div>
+
+    
+</body>
+</html>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
