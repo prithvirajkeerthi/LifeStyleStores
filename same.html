@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals Corner</title>
+
+  <style>
+
+    h1{
+      font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 36px;
+      margin-left: 5%;
+      font-weight: 600;
+    } 
+
+    .products{
+      /* height: 250px; */
+      width: 90%;
+      margin:auto;
+      /* border: 2px solid red; */
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      grid-template-rows: repeat(3,1fr);
+      gap: 15px;
+    }
+
+    .products > div {
+      display: flex;
+      border: 1px solid rgb(223, 220, 220);
+      padding-left: 10px;
+      align-items: center;
+    }
+
+    .products > div > div a img{
+      height: 50px;
+      width: 50px;
+    }
+
+    .products > div > div:last-child{
+      margin-left: 10px;
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .product > div :hover{
+      border: 2px solid goldenrod;
+    }
+
+    #sortAndFilter{
+      width: 90%;
+      /* border: 2px solid red; */
+      margin: auto;
+      margin-top: 50px;
+      background-color: #f7f8f7;
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      grid-template-rows: repeat(2,1fr);
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .filtering{
+      height: 37px;
+      width: 190px;
+      border: 1px solid silver;
+      padding: 10px;
+      font-family: sans-serif;
+      color: grey;
+      font-weight: 550;
+      /* margin-left: 5%; */
+    }
+
+    #number{
+      color: grey;
+      font-family: sans-serif;
+      font-size: 16px;
+      margin-left: 5%;
+      margin-top: 20px;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <h1>Women</h1>
+
+  <div class="products">
+    <div>
+      <div>
+          <!-- <a href=""><img src="" alt=""></a> -->
+      </div>
+      <div>Accessories</div>
+    </div>
+
+    <div>
+        <div>
+            <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-beauty.jpg" alt=""></a>
+        </div>
+        <div>Beauty</div>
+    </div>
+
+    
+    <div>
+        <div>
+              <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-bottoms.jpg" alt=""></a>
+        </div>
+        <div>Bottom Wear</div>
+    </div>
+
+        
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-dressesandjumpsuits.jpg" alt=""></a>
+      </div>
+      <div>Dressses and Jumpsuits</div>
+    </div>
+
+          
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-ethnicwear.jpg" alt=""></a>
+      </div>
+      <div>Ethnic Wear</div>
+    </div>
+
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-facemasks.jpg" alt=""></a>
+      </div>
+      <div>Face Masks</div>
+    </div>
+
+              
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-lingerie.jpg" alt=""></a>
+      </div>
+      <div>Lingerie</div>
+    </div>
+
+  
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-nightwear.jpg" alt=""></a>
+      </div>
+      <div>Nightwear</div>
+    </div>
+
+                
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-plussize.jpg" alt=""></a>
+      </div>
+      <div>Plus Size</div>
+    </div>
+
+                  
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-sportswear.jpg" alt=""></a>
+      </div>
+      <div>Sports Wear</div>
+    </div>
+
+                      
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-sunglasses.jpg" alt=""></a>
+      </div>
+      <div>Sunglasses</div>
+    </div>
+
+                        
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-tops.jpg" alt=""></a>
+      </div>
+      <div>Top Wear</div>
+    </div>
+
+                          
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-watches.jpg" alt=""></a>
+      </div>
+      <div>Watches</div>
+    </div>
+
+                         
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-watchesandsunglasses.jpg" alt=""></a>
+      </div>
+      <div>Watches & Sunglasses</div>
+    </div>
+
+                              
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-winterwear.jpg" alt=""></a>
+      </div>
+      <div>Winterwear</div>
+    </div>
+
+  </div>
+
+
+      <!-- Filtering And Sorting Part -->
+
+    <div id="sortAndFilter">
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Price</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+      
+      <div>
+        <select name="" class="filtering">
+          <option value="">Type</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Size</option>
+          <option value="">S (6020)</option>
+          <option value="">M (5479)</option>
+          <option value="">L (5276)</option>
+          <option value="">XS (4670)</option>
+          <option value="">XS (4670)</option>
+        </select>
+
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Color</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Sleeve Length</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Length</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Brands</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Browse</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Promotions</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Discount Range</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+    </div>  
+    <h2 id="number">15391 Products</h2>
+  
+</body>
+</html>
