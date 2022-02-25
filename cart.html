@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+
+  <link rel="stylesheet" href="cart.css">
+  <style>
+    #total{
+      height: 65px;
+      width: 150px;
+      background-color: goldenrod;
+      text-align: center;
+      line-height: 18px;
+      border-radius: 10px;
+      margin-left: 80px;
+    }
+
+    #payment{
+      height: 35px;
+      width: 150px;
+      margin-left:100px;
+      margin-top: 20px;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <button onclick="window.location.href='mens.html'">Go to Men's Section</button>
+  <button onclick="window.location.href='womens.html'">Go to Women's Section</button>
+
+  <div id="container">
+
+  </div>
+  
+  <div id="total">
+
+      <h4><u>Total Amount</u></h4>
+     <h1 id="final">0</h1>
+
+  </div>
+
+  <div id="payment">
+  <button onclick="window.location.href='payment.html'">Proceed to Pay</button>
+  </div>
+
+  <!-- <h3 id="totalQty">0</h3> -->
+  
+</body>
+</html>
+
+<script>
+  var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+  console.log(cartArr)   ;
+
+  // displaydata(items);
+
+function displaydata(items){
+document.querySelector("#container").innerHTML = "";
+
+items.map(function(elem,index,array){
+
+var div1 = document.createElement("div");
+
+var Image = document.createElement("img");
+Image.setAttribute("src", elem.img);
+
+var Name = document.createElement("h3")
+Name.innerText = elem.name;
+
+var div2 = document.createElement("div");
+div2.setAttribute("id","cart")
+
+var Price = document.createElement("h2")
+Price.innerText = elem.price +"-"+ elem.quantity ;
+
+var StrikePrice = document.createElement("p")
+StrikePrice.innerText = elem.strikePrice;
+
+div2.append(Price,StrikePrice)
+
+var btn = document.createElement("button");
+btn.innerText = "Add +1"
+btn.addEventListener("click" , function(){
+  increaseQuantity(index);
+});
+
+    var btn2 = document.createElement("button");
+    btn2.innerText = "Minus -1"
+    btn2.addEventListener("click" , function(){
+      decreaseQuantity(index);
+    });
+
+
+div1.append(Image,Name,div2,btn,btn2)
+document.querySelector("#container").append(div1)
+
+
+});
+
+}
+
+function showtotal(){
+  var total = cartArr.reduce(function(accumulator,element,index,array){
+  return accumulator + (element.price * element.quantity);
+  },0)
+
+  document.querySelector("#final").innerText = total;
+}
+
+displaydata(cartArr);
+
+function increaseQuantity(index){
+  console.log(index);
+  cartArr[index].quantity++;
+  console.log(cartArr);
+  localStorage.setItem("cartItems", JSON.stringify(cartArr));
+
+  displaydata(cartArr);
+  showtotal();
+}
+
+function decreaseQuantity(index){
+  console.log(index);
+  cartArr[index].quantity--;
+  console.log(cartArr);
+  localStorage.setItem("cartItems", JSON.stringify(cartArr));
+
+  displaydata(cartArr);
+  showtotal();
+}
+
+
+</script>
