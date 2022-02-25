@@ -1,0 +1,45 @@
+h2 {
+  display: flex;
+}
+
+.button {
+  height: 35px;
+  width: 80px;
+}
+
+#cart {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  font-family: sans-serif;
+  /* border: 2px solid red; */
+}
+
+h2 {
+  display: inline;
+  margin-top: 6px;
+}
+
+p {
+  margin-left: 20px;
+  display: inline-block;
+  text-decoration: line-through;
+  color: red;
+}
+
+#container > div {
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
