@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals Corner</title>
+
+  <style>
+
+    h1{
+      font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 36px;
+      margin-left: 5%;
+      font-weight: 600;
+    } 
+
+    .products{
+      /* height: 250px; */
+      width: 90%;
+      margin:auto;
+      /* border: 2px solid red; */
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      grid-template-rows: repeat(3,1fr);
+      gap: 15px;
+    }
+
+    .products > div {
+      display: flex;
+      border: 1px solid rgb(223, 220, 220);
+      padding-left: 10px;
+      align-items: center;
+    }
+
+    .products > div > div a img{
+      height: 50px;
+      width: 50px;
+    }
+
+    .products > div > div:last-child{
+      margin-left: 10px;
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .products > div:hover{
+      border: 1px solid goldenrod;
+      color: goldenrod;
+    }
+
+    #sortAndFilter{
+      width: 90%;
+      /* border: 2px solid red; */
+      margin: auto;
+      margin-top: 50px;
+      background-color: #f7f8f7;
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      grid-template-rows: repeat(2,1fr);
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .filtering{
+      height: 37px;
+      width: 190px;
+      border: 1px solid silver;
+      padding: 10px;
+      font-family: sans-serif;
+      color: grey;
+      font-weight: 550;
+      /* margin-left: 5%; */
+    }
+
+    #number{
+      color: grey;
+      font-family: sans-serif;
+      font-size: 16px;
+      margin-left: 5%;
+      margin-top: 20px;
+    }
+
+    #ProductItems{
+      display:grid;
+      /* height: 5000px; */
+      width: 90%;
+      margin: auto;
+      /* border: 2px solid red; */
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(12,1fr);
+      gap: 10px;
+    }
+
+    .ProductImage{
+      height: 400px;
+      width: 290px;
+
+    }
+
+    .PriceDiv{
+      display: flex;
+    }
+
+    .StrikeOfPrice{
+      text-decoration: line-through;
+      margin-top: 23px;
+      margin-left: 10px;
+      color: grey;
+      font-family: sans-serif;
+      font-size: 12px;
+      
+    }
+
+
+    .Price{
+      font-family: sans-serif;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+
+    .Product{
+      font-family:sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      margin-left: 10px;
+      margin-top: -8px;
+    }
+
+
+    #mu{
+      color: grey;
+      font-family: sans-serif;
+      font-size:15px;
+      text-align: center;
+    }
+
+    #bu{
+      margin-left: 38.5%;
+      width: 300px;
+      height: 50px;
+      color: goldenrod;
+      background-color: white;
+      border: 1px solid goldenrod;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+    
+    .PapaDiv{
+      /* border:2px solid red; */
+      height: 500px;
+    }
+
+    .Basketbutton{
+      width: 300px;
+      height: 50px;
+      background-color: goldenrod;
+      color: white;
+      font-size: 16px;
+      border: 0px;
+      border-radius: 10px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <h1>Women</h1>
+
+  <div class="products">
+    <div>
+      <div>
+          <!-- <a href=""><img src="" alt=""></a> -->
+      </div>
+      <div>Accessories</div>
+    </div>
+
+    <div>
+        <div>
+            <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-beauty.jpg" alt=""></a>
+        </div>
+        <div>Beauty</div>
+    </div>
+
+    
+    <div>
+        <div>
+              <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-bottoms.jpg" alt=""></a>
+        </div>
+        <div>Bottom Wear</div>
+    </div>
+
+        
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-dressesandjumpsuits.jpg" alt=""></a>
+      </div>
+      <div>Dressses and Jumpsuits</div>
+    </div>
+
+          
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-ethnicwear.jpg" alt=""></a>
+      </div>
+      <div>Ethnic Wear</div>
+    </div>
+
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-facemasks.jpg" alt=""></a>
+      </div>
+      <div>Face Masks</div>
+    </div>
+
+              
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-lingerie.jpg" alt=""></a>
+      </div>
+      <div>Lingerie</div>
+    </div>
+
+  
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-nightwear.jpg" alt=""></a>
+      </div>
+      <div>Nightwear</div>
+    </div>
+
+                
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-plussize.jpg" alt=""></a>
+      </div>
+      <div>Plus Size</div>
+    </div>
+
+                  
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-sportswear.jpg" alt=""></a>
+      </div>
+      <div>Sports Wear</div>
+    </div>
+
+                      
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-sunglasses.jpg" alt=""></a>
+      </div>
+      <div>Sunglasses</div>
+    </div>
+
+                        
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-tops.jpg" alt=""></a>
+      </div>
+      <div>Top Wear</div>
+    </div>
+
+                          
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-watches.jpg" alt=""></a>
+      </div>
+      <div>Watches</div>
+    </div>
+
+                         
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-watchesandsunglasses.jpg" alt=""></a>
+      </div>
+      <div>Watches & Sunglasses</div>
+    </div>
+
+                              
+    <div>
+      <div>
+          <a href=""><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-winterwear.jpg" alt=""></a>
+      </div>
+      <div>Winterwear</div>
+    </div>
+
+  </div>
+
+
+      <!-- Filtering And Sorting Part -->
+
+    <div id="sortAndFilter">
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Price</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+      
+      <div>
+        <select name="" class="filtering">
+          <option value="">Type</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Size</option>
+          <option value="">S (6020)</option>
+          <option value="">M (5479)</option>
+          <option value="">L (5276)</option>
+          <option value="">XS (4670)</option>
+          <option value="">XS (4670)</option>
+        </select>
+
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Color</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Sleeve Length</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Length</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Brands</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Browse</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Promotions</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div>
+        <select name="" class="filtering">
+          <option value="">Discount Range</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+    </div>  
+    <h2 id="number">15391 Products</h2>
+
+
+         <!-- Products space -->
+
+    <div id="ProductItems">
+
+    </div>
+
+          
+    <div id="container"> 
+      <!-- this is the parent box -->
+   </div>
+
+
+
+    <h2 id="mu">48 products out of 3340</h2>
+
+    <hr style="width: 250px;">
+
+    <button id="bu">LOAD MORE PRODUCTS</button>
+
+  
+</body>
+</html>
+
+<script>
+
+    //  Products Space
+    
+     var womensData = JSON.parse(localStorage.getItem("womensData"));
+
+    var womensData = [
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000006954864-Var1511-Green-Olive-1000006954864-Var1511_01-2100.jpg",
+         price : "649",
+         strikePrice : "₹1399 ",
+         name : "CODE Solid High-Rise Treggings",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009901920-Orange-Rust-1000009901920_01-2100.jpg",
+         price : "749",
+         strikePrice : "₹1499 ",
+         name : "GINGER Women Floral Print Tie-Up Waist Playsuit",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009848868-Multicolour-1000009848868_01-2100.jpg",
+         price : "1349",
+         strikePrice : "₹2699 ",
+         name : "GINGER Women Woven Bodycon Dress",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010508308-Purple-Lavender-1000010508308_01-2100.jpg",
+         price : "749",
+         strikePrice : "₹1499",
+         name : "KAPPA Women Solid Hooded Jacket",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010095242-Blue-LightBlue-1000010095242_01-2100.jpg",
+         price : "624",
+         strikePrice : "₹1249",
+         name : "SPAN Women Printed Straight Kurta",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009289803-Black-Black-1000009289803_01-2100.jpg",
+         price : "949",
+         strikePrice : "₹1899 ",
+         name : "CODE Women Embellished Round Neck Sweater",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010508308-Red-Red-1000010508308_01-2100.jpg",
+         price : "749",
+         strikePrice : "₹1499",
+         name : "KAPPA Women Solid Hooded Jacket",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010444516-Grey-Sage-1000010444516_01-2100.jpg",
+         price : "449",
+         strikePrice : "₹899",
+         name : "GINGER Women Solid Round Neck Top",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009847592-Black-Black-1000009847592_01-2100.jpg",
+         price : "749",
+         strikePrice : "₹ 1499",
+         name : "GINGER Women Typographic",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010224445-Green-Mint-1000010224445_01-2100.jpg",
+         price : "999",
+         strikePrice : "₹ 1999",
+         name : "AND Women Floral Print Shirt",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009847570-Multicolour-1000009847570_01-2100.jpg",
+         price : "649",
+         strikePrice : "₹1299",
+         name : "GINGER Women Checked Shorts with Paperbag Waist",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009865688-Blue-Navy-1000009865688_01-2100.jpg",
+         price : "949",
+         strikePrice : "₹1899",
+         name : "ALLEN SOLLY Women Textured Top with Button Placket",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007681622-var71-Blue-NAVY-1000007681622-var71_01-2100.jpg",
+         price : "249",
+         strikePrice : "₹499",
+         name : "FAME FOREVER Striped Round Neck Top",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010508308-Blue-Blue-1000010508308_01-2100.jpg",
+         price : "749",
+         strikePrice : "₹1499",
+         name : "KAPPA Women Solid Hooded Jacket",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009865702-Yellow-Yellow-1000009865702_01-2100.jpg",
+         price : "1249",
+         strikePrice : "₹2499",
+         name : "ALLEN SOLLY Pintucked Tunic with Floral Embroidery",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010489819-Pink-Pink-1000010489819_01-2100.jpg",
+         price : "949",
+         strikePrice : "₹1899",
+         name : "BOSSINI Women Textured Top",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010489808-Pink-Pink-1000010489808_01-2100.jpg",
+         price : "949",
+         strikePrice : "₹1899",
+         name : "BOSSINI Women Striped V-Neck Sweater",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010443583-White-OffWhite-1000010443583_01-2100.jpg",
+         price : "649",
+         strikePrice : "₹1299",
+         name : "GINGER Women Striped Jumpsuit",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010430004-Pink-Magenta-1000010430004_01-2100.jpg",
+         price : "1049",
+         strikePrice : "₹2099",
+         name : "CODE Women Solid Off-Shoulder Neck Tiered Dress",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010072071-Green-Emerald-1000010072071_01-2100.jpg",
+         price : "899",
+         strikePrice : "₹1799",
+         name : "SPAN Women Embroidered Three-Quarter Sleeves Straight Kurta",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010243832-White-White-1000010243832_01-2100.jpg",
+         price : "524",
+         strikePrice : "₹1049",
+         name : "FAME FOREVER Women Floral Print Woven Top",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009982201-White-Offwhite-1000009982201_01-2100.jpg",
+         price : "799",
+         strikePrice : "₹1599",
+         name : "COLOUR ME Women Checked A-line Dress",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010548472-Red-Wine-1000010548472_01-2100.jpg",
+         price : "649",
+         strikePrice : "₹1299 ",
+         name : "GINGER Women Polka Dot Print Puffed Sleeves Shift Dress",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",
+         price : "799",
+         strikePrice : "₹1599",
+         name : "COLOUR ME Women Printed Ethnic A-Line Dress",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010426489-Beige-Beige-1000010426489_01-2100.jpg",
+         price : "499",
+         strikePrice : "₹999",
+         name : "MELANGE Women Printed Short Sleeves Blouse",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010150487-Blue-Aqua-1000010150487_01-2100.jpg",
+         price : "949",
+         strikePrice : "₹1899",
+         name : "SPAN Women Printed A-Line Kurta",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009982234-Purple-Lilac-1000009982234_01-2100.jpg",
+         price : "499",
+         strikePrice : "₹999",
+         name : "COLOUR ME Women Shirt with Floral Embroidery",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010516245-White-White-1000010516245_01-2100.jpg",
+         price : "749",
+         strikePrice : "₹1499",
+         name : "FAME FOREVER Women Polka Dot Pattern Pullover",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010125756-Black-Black-1000010125756_01-2100.jpg",
+         price : "749",
+         strikePrice : "₹1499",
+         name : "GINGER Women Printed Sleeveless Playsuit",
+       },
+
+
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009775828-Beige-Beige-1000009775828_01-2100.jpg",
+         price : "849",
+         strikePrice : "₹1699 ",
+         name : "CODE Women Striped Shrug",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010624518-Var8-Black-Black-1000010624518-Var8_01-2100.jpg",
+         price : "299",
+         strikePrice : "₹599",
+         name : "FAME FOREVER Women Printed Round Neck T-shirt",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010432082-Red-Wine-1000010432082_01-2100.jpg",
+         price : "649",
+         strikePrice : "₹1299",
+         name : "FAME FOREVER Women Textured Sweater",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425481-Pink-Pink-1000010425481_01-2100.jpg",
+         price : "649",
+         strikePrice : "₹1299",
+         name : "MELANGE Women Printed Straight Kurta",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010170742-Orange-Orange-1000010170742_01-2100.jpg",
+         price : "399",
+         strikePrice : "₹799",
+         name : "GINGER Women Printed Round Neck T-shirt",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009847526-Blue-Navy-1000009847526_01-2100.jpg",
+         price : "949",
+         strikePrice : "₹1899",
+         name : "GINGER Women Checked Elasticated Trousers",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010444494-Pink-DustyPink-1000010444494_01-2100.jpg",
+         price : "449",
+         strikePrice : "₹899",
+         name : "GINGER Women Textured Puffed Sleeves Crop Top",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",
+         price : "649",
+         strikePrice : "₹1299",
+         name : "MELANGE Women Embroidered Straight Kurta",
+       },
+
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010040108-Orange-Orange-1000010040108_01-2100.jpg",
+         price : "1499",
+         strikePrice : "₹2899",
+         name : "MELANGE Women Embroidered Straight Kurta with Jacket and Straight Pants",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010045665-Green-Olive-1000010045665_01-2100.jpg",
+         price : "449",
+         strikePrice : "₹899",
+         name : "KAPPA Women Printed Training T-shirt",
+       },
+
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007681683-Yellow-MUSTARD-1000007681683_01-2100.jpg",
+         price : "249",
+         strikePrice : "₹499",
+         name : "FAME FOREVER Striped Regular Fit Round Neck T-shirt",
+       },
+
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010673688-Blue-Navy-1000010673688_01-2100.jpg",
+         price : "524",
+         strikePrice : "₹1049",
+         name : "GINGER Women Printed Round Neck Cropped Sweatshirt",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010426456-Red-Maroon-1000010426456_01-2100.jpg",
+         price : "499",
+         strikePrice : "₹999",
+         name : "MELANGE Women Printed Notched Neck Top",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010025066-Grey-Grey-1000010025066_01-2100.jpg",
+         price : "449",
+         strikePrice : "₹899",
+         name : "MELANGE Women Printed Ethnic Top",
+       },
+
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010624518-Pink-DustyPink-1000010624518_01-2100.jpg",
+         price : "299",
+         strikePrice : "₹699",
+         name : "FAME FOREVER Women Printed Round Neck T-shirt",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010126422-Black-Black-1000010126422_01-2100.jpg",
+         price : "449",
+         strikePrice : "₹899",
+         name : "GINGER Women Printed Round Neck Top",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009710139-Var5-Blue-Indigo-1000009710139-Var5_01-2100.jpg",
+         price : "499",
+         strikePrice : "₹999",
+         name : "GLOBAL DESI Women Solid Extended Sleeves Top",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010522043-Blue-DarkBlue-1000010522043_01-2100.jpg",
+         price : "849",
+         strikePrice : "₹1699",
+         name : "FAME FOREVER Women Solid Denim Jacket",
+       },
+
+       {
+         img : "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010748546-Blue-Teal-1000010748546_01-2100.jpg",
+         price : "649",
+         strikePrice : "₹1299",
+         name : "IMARA Women Textured Straight Kurta",
+       },
+
+    ]
+     
+
+      var cartArr = JSON.parse(localStorage.getItem  ("cartItems")) || [];
+
+      displaydata(womensData);
+
+      function displaydata(womensData){
+      document.querySelector("#container").innerHTML = "";
+
+       womensData.map(function(elem,index,array){
+       var Productdiv = document.createElement("div")
+
+       var ProductImage = document.createElement("img")
+       ProductImage.setAttribute("src" , elem.img)
+       ProductImage.setAttribute("class" , "ProductImage")
+
+       var Price = document.createElement("h3")
+       Price.innerText = elem.price;
+       Price.setAttribute("class" , "Price");
+
+       var StrikeOfPrice = document.createElement("p");
+       StrikeOfPrice.innerText = elem.strikePrice;
+       StrikeOfPrice.setAttribute("class" , "StrikeOfPrice");
+
+       var Product = document.createElement("h4");
+       Product.innerText = elem.name;
+       Product.setAttribute( "class" , "Product");
+
+       var PriceDiv = document.createElement("div")
+       PriceDiv.setAttribute("class" , "PriceDiv")
+
+
+       var PapaDiv = document.createElement("div")
+       PapaDiv.setAttribute("class" , "PapaDiv")
+
+       var button = document.createElement("button");
+       button.innerText = "Add to Basket";
+       button.setAttribute("class" , "Basketbutton")
+       button.addEventListener("click" , function(){
+       cartdata(elem);
+      });
+      PriceDiv.append(Price,StrikeOfPrice)
+
+      PapaDiv.append(ProductImage,PriceDiv,Product)
+        
+       Productdiv.append(PapaDiv,button)
+       document.querySelector("#ProductItems").append(Productdiv);
+
+
+        
+       });
+
+     function cartdata(elem){
+     console.log(elem);
+     elem.quantity = 1;
+     cartArr.push(elem);
+     console.log(cartArr);
+     localStorage.setItem("cartItems", JSON.stringify(cartArr));
+     }
+
+    }
+
+
+</script>
