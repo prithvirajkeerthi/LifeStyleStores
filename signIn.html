@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavBar</title>
+
+  <style>
+
+    body{
+      background-image: url("https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/781ad1bb-dbe8-42ce-bb4e-ccb2844fcb8a/bonobos-opt.jpg");
+      /* background-repeat: no-repeat; */  
+    }
+   
+   #navbar{
+     height: 40px;
+     width: 100%;
+     border: 2px solid black;
+     background-color: rgba(0, 0, 0, 0.911);
+   }
+
+
+    #container{
+      height: 650px;
+      width: 450px;
+      /* border: 2px solid red; */
+      font-family: sans-serif;
+      font-weight: bold;
+      margin: auto;
+      margin-top: -57px;
+      /* padding-left: 150px; */
+      background-color: silver;
+      text-align: center;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    h4{
+      font-family: sans-serif;
+    }
+
+    input{
+      width: 270px;
+      height: 30px;
+      border-radius: 10px;
+    }
+
+    #submitButton{
+      width: 280px;
+      margin-top: 20px;
+      height: 35px;
+      font-size: 16px;
+      background-color: goldenrod;
+    }
+
+    a{
+      font-size: 30px; 
+      margin-left: 11%;
+      color: white;
+    }
+
+    #avatar{
+       border-radius: 150px;
+    }
+
+    #signLogo{
+      height: 70px;
+      width: 190px;
+    }
+
+     /* #mainpage{
+      
+    } */
+   
+    
+    #mainpage > button{
+      height: 60px;
+      width: 200px;;
+      /* font-size: 25px; */
+      border-radius: 15px;
+      background-color: tomato;
+      color: white;
+      /* margin-top:50px; */
+    }
+
+
+
+  </style>
+
+
+</head>
+<body>
+
+  <div id="mainpage">
+
+    <button onclick="window.location.href='womens.html'">Go To LifeStyles Stores</button>
+
+  </div>
+
+  <div id="container">
+    
+    <form action=""  id="form">
+
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Lifestyle_Stores_-_New.jpg" alt="" id="signLogo">
+      </div>
+      <h1 style="color: crimson;"><u>Sign-In</u></h1>
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQq6gaTf6N93kzolH98ominWZELW881HqCgw&usqp=CAU" alt="" id="avatar">
+  
+      <div>
+        <h4>Email Id</h4>
+        <input type="email" placeholder="Enter your email address" id="email">
+      </div>
+  
+      <div>
+        <h4>Password</h4>
+        <input type="text" placeholder="Enter the password" id="password">
+      </div>
+
+      <input type="submit" value ="Login" id="submitButton">
+
+    </form>
+  </div>
+
+  <!-- <div id="mainpage">
+
+    <button onclick="mainpage()">Go To LifeStyles Stores</button> -->
+
+  </div>
+
+</body>
+</html>
+
+<script>
+    
+    var regdArr = JSON.parse(localStorage.getItem("signUpLocal"))
+    console.log(regdArr);
+
+    document.querySelector("#form").addEventListener("submit", checkUser)
+    var form = document.querySelector("#form")
+    
+   function checkUser(event){
+    event.preventDefault();
+
+    console.log(form.email.value)
+    
+    var user = form.email.value; 
+    var pass = form.password.value;
+    console.log(user, pass);
+    
+    var found = false;
+    for(var i=0 ; i<regdArr.length ; i++)
+    {
+      if(regdArr[i].email == user && regdArr[i].password == pass){
+        found = true;
+        break;
+      }
+    }
+    if(found == true){
+      alert("Congrats! login Success");
+      
+      // document.querySelector("#submitButton").addEventListener("submit",function(){
+        // window.location.href = "womens.html";
+      // })
+    }
+    else{
+      alert("login Failed!")
+    }
+    
+  }
+
+</script>
