@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.title
+{
+    font-size: 26px;
+    font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+font-weight: lighter;    
+}
+.divider{
+ margin-top: 60px;
+ margin-bottom: 60px;
+ 
+}
+.ofrBox
+{
+    border:1px solid #ffead9;
+    width: 100%;
+    height: auto;
+    line-height: 2;
+}
+.ofrBox>div
+{
+    width: 68%;
+    font-weight: lighter;
+    font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+}
+.ofrBox>div:first-child
+{
+    color: rgb(241, 163, 19);
+    padding-left: 40px;
+    line-height: 1.2;
+    margin-top: 15px;
+}
+.ofrBox2
+{
+    margin-top: 50px;
+    color: rgb(241, 163, 19);
+    padding-left: 40px;
+    line-height: 1.2;
+    border:1px solid #ffead9;
+}
+#maindiv
+{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    height: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 30px;
+}
+#maindiv>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+
+body{
+    margin:100px;
+}
+td{
+    
+    width: auto;
+}
+th{
+    text-align:left;
+    padding: 20px;
+    padding-left: 0px;
+    font-weight: lighter;
+}
+th:first-child
+{
+    width:20%
+}
+.fsmall{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.btn{
+    width:100%;
+    background-color:orange;
+    color:white;
+    height:50px;
+    border: 1px solid orange;
+
+}
+.bbut{
+width:100%;
+padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <hr class="divider">
+<h2 class="title">
+    Your shopping Basket
+</h2>
+<div class="ofrBox">
+    <div>
+        Get The Offer
+    </div>
+    <div>
+        <ul>
+            <li>
+                LAST DAY to SAVE an EXTRA 20% OFF on all orders of Rs 3,999 above. Use Code SALE20 | Get 10% OFF on orders of Rs 2,499 above. Use Code: SALE10
+            </li>
+            
+        </ul>
+</div>
+</div>
+<div id="maindiv">
+    <div>
+      <table>
+          <tr>
+              <th>Item</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total Price</th>
+          </tr>
+          <tr>
+              <th>
+                <img width="45%" src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg">
+              </th>
+           
+          </tr>
+          
+      </table>
+    </div>
+    <div id="smallCart">
+        <div class="fsmall">
+            <div>SubTotal:</div>
+            <div id="subtotal"><span>$</span></div>
+        </div>
+        <div class="fsmall">
+            <div>Standard Group Shipping:</div>
+            <div><span>$</span>0</div>
+        </div>
+        <div class="fsmall">
+            <div>Offer savings:</div>
+            <div style="color:green">Free</div>
+        </div>
+        <div class="fsmall">
+            <div>Total:</div>
+            <div id="total"><span>$</span></div>
+        </div>
+        <button class="btn">PROCEED TO CHECKOUT</button>
+
+        <div class="bbut">
+            <img  src="//i1.lmsin.net/website_images/common/images/basket/ico-gift.png" alt="image description" width="36" height="25">
+            <p >Got a Promo Code? <a href="#">Use it here</a></p>
+            <p >Got a Promo/Voucher Code?</p>
+            <p ><a href="#">Apply Promo Code</a></p>
+            </div>
+            <div class="bbut">
+                <div >
+                <img src="https://i1.lmsin.net/website_images/in/giftcards/gift-card-icon.svg" alt="image description" width="24" height="18">
+                <p>Have a Gift Card? Redeem it at checkout.</p>
+                </div>
+                </div>
+    </div>
+    
+    
+</div>
+</body>
+</html>
+<script>
+    var basketItems=JSON.parse(localStorage.getItem('basket'))||[];
+    basketItems.map(function(element){ 
+        var row=document.createElement("tr");
+        var img=document.createElement("img");
+        img.setAttribute("src",element.image);
+        img.style.width="100%";
+var col1=document.createElement("td");
+col1.style.width="30%"
+col1.append(img);
+var col2=document.createElement("td");
+col2.innerText=element.name;
+col2.style.height="90px";
+col2.style.fontFamily="ProximaNova-Regular";
+
+var col3=document.createElement("td");
+col3.innerText=element.price;
+var col4=document.createElement("td");
+col4.innerText=1;
+var col5=document.createElement("td");
+col5.setAttribute("class","tuta");
+col5.innerText=element.price;
+row.append(col1,col2,col3,col4,col5);
+document.querySelector("tbody").append(row);
+
+ })
+ var total=basketItems.reduce(function(acc,element)
+    {
+return acc+element.price;
+    },0)
+    document.querySelector("#total").innerText=total;
+    document.querySelector("#subtotal").innerText=total;
+    
+</script>
