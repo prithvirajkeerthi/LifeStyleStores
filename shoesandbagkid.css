@@ -1,0 +1,107 @@
+.pageLoc{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dealsTitle
+{
+    font-size: 32px;
+    font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+font-weight: bold;      
+}
+body{
+    margin:100px;
+   }
+   .pageLock{
+       display: flex;
+align-items: center;
+       border: 1px solid rgb(192, 159, 159);
+       padding: 8px;
+    
+   }
+   .position
+   {
+       margin-right: 15px;
+       margin-left: 10px;
+       font-weight: bold;
+       font-family: "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"
+
+   }
+   .pageLockpos{
+       display: grid;
+       ;
+       grid-template-columns: repeat(2,1fr);
+       grid-template-rows: 1fr;
+    width: 30%;
+    height: auto;
+    gap: 10px;
+   }
+   .filters
+   {
+       display: grid;
+       grid-template-columns: repeat(6,1fr);
+       grid-template-rows: repeat(2,1fr);
+       width: 87%;
+       padding: 20px;
+       gap: 10px;
+     margin: auto;
+   }
+   .filters>div{
+       background-color: rgb(255,255,255);
+       height: 50px;
+   }
+   body>#filterBox
+   {
+       margin:auto;
+   }
+   .box
+   {
+       background-color: rgb(247,248,247);
+       margin: -100px;
+       margin-top: 100px;
+       height: auto;
+   }
+   .btn
+   {
+       width: 100%;
+       height: 100%;
+       background-color: white;
+   }
+   .btnarr
+   {
+    display: flex;justify-content: space-between;
+   }
+   .container
+   {
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(14,1fr);
+       gap: 10px;
+       margin-top: 200px;
+   }
+   .container>div {
+       height: auto;
+   }
+   .priceDiv
+   {
+       display:flex;
+   }
+   .butn
+   {padding:14px 28px 28px;
+       background-color:rgb(252, 182, 53);
+       color:white;
+       font-weight:bold;
+       width: 100%;
+       height: 5px;
+       margin-bottom: 10px;
+       text-align: center;
+       border: 1px solid rgb(252, 182, 53) ;
+   }
+   .divpro{
+border: 1px solid rgb(252, 182, 53);
+height:50px;
+display:flex;
+   }
+   .quantity{
+       width: 50%;
+       margin: 10px;
+   }
