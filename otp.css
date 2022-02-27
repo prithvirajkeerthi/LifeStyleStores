@@ -1,0 +1,40 @@
+#kkontainer{
+    border: 1px solid rgb(44, 44, 139);
+            width: 60%;
+            margin: auto;
+            height:400px;
+            line-height:2;
+            padding: 30px;
+            margin-top: 100px;
+            background-color:  rgb(192, 238, 238);
+        }
+  
+#kkontainer>h3{
+    color:rgb(44,44,139);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#kkontainer>p{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+
+}
+#partit {
+    width:30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+#hbut,.hbut {
+    width:15%;
+    height:30px;
+    background-color: rgb(36, 148, 212);
+    border: 1px solid rgb(36,148, 212);
+    border-radius: 20px;
+}
+body{
+    background-color: rgb(192, 238, 238);
+    background-image: url(https://thumbs.dreamstime.com/b/flat-design-payment-gateway-illustration-concept-graphics-come-file-types-very-easy-to-apply-any-software-192846873.jpg);
+}

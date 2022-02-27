@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavBar</title>
+
+  <style>
+    
+    body{
+      background-image: url("https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/781ad1bb-dbe8-42ce-bb4e-ccb2844fcb8a/bonobos-opt.jpg");
+      /* background-repeat: no-repeat; */  
+    }
+
+   #navbar{
+     height: 40px;
+     width: 100%;
+     border: 2px solid black;
+     background-color: rgba(0, 0, 0, 0.911);
+   }
+
+
+    #container{
+      height: 920px;
+      width: 550px;
+      /* border: 2px solid red; */
+      font-family: sans-serif;
+      font-weight: bold;
+      margin: auto;
+      margin-top: -60px;
+      /* padding-left: 150px; */
+      background-color: silver;
+      text-align: center;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    h4{
+      font-family: sans-serif;
+    }
+
+    input{
+      width: 390px;
+      height: 32px;
+      border-radius: 10px;
+    }
+
+    #submitButton{
+      width: 400px;
+      height: 35px;
+      margin-top: 30px;
+      font-size: 16px;
+      background-color: goldenrod;
+    }
+
+    a{
+      font-size: 30px; 
+      margin-left: 11%;
+      color: white;
+    }
+
+
+    .avatar{
+      border-radius: 120px;
+    }
+    
+    #baba{
+      color: tomato;
+    }
+
+    #signLogo{
+      height: 70px;
+      width: 190px;
+    }
+
+    #mainpage > button{
+      height: 60px;
+      width: 200px;
+      border-radius: 15px;
+      background-color: tomato;
+      color: white;
+      /* margin-top:50px; */
+    }
+
+
+  </style>
+
+
+</head>
+
+  
+<div id="mainpage">
+
+  <button onclick="window.location.href='womens.html'">Go To LifeStyles Stores</button>
+
+</div>
+
+
+  <div id="container">
+    
+    <form action="" id="Form">
+
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Lifestyle_Stores_-_New.jpg" alt="" id="signLogo">
+      </div>
+
+      <h1 id="baba"><u>Create Account</u></h1>
+      <h1>Sign-Up</h1>
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOH2aZnIHWjMQj2lQUOWIL2f4Hljgab0ecZQ&usqp=CAU" alt="Avatar" class="avatar">
+
+      <div>
+        <h4>Your name</h4>
+        <input type="text" placeholder="Enter Your Name Here" id="name">
+      </div>
+  
+      <div>
+        <h4>Mobile Number</h4>
+        <input type="number" placeholder="Enter your mobile number" id="mobile">
+      </div>
+  
+      <div>
+        <h4>Email Id</h4>
+        <input type="email" placeholder="Enter your email address" id="email">
+      </div>
+  
+      <div>
+        <h4>Password</h4>
+        <input type="text" placeholder="Enter the password" id="password">
+      </div>
+
+      <input type="submit" id="submitButton">
+    </form>
+
+  </div>
+</body>
+</html>
+
+<!-- <script>
+  window.location.href = "signIn.html";
+</script> -->
+
+<script>
+
+    document.querySelector("#Form").addEventListener("submit", formFunction)
+    var signUpArr = JSON.parse(localStorage.getItem("signUpLocal")) || [];
+
+     function formFunction(event){
+       event.preventDefault();
+
+       var name = document.querySelector("#name").value;
+       var mobile = document.querySelector("#mobile").value;
+       var email = document.querySelector("#email").value;
+       var password = document.querySelector("#password").value;
+       
+       var signUpObj = {
+         name : name,
+         Mobile : mobile,
+         email : email,
+         password : password,
+       };
+
+       console.log(signUpObj);
+       signUpArr.push(signUpObj);
+
+       localStorage.setItem("signUpLocal" ,JSON.stringify(signUpArr));
+     }
+
+     document.querySelector("#submitButton").addEventListener("click", function(){
+       window.location.href = "signIn.html";
+     })
+</script>

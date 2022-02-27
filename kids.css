@@ -1,0 +1,619 @@
+.title
+{
+    font-size: 32px;
+    font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+font-weight: normal;      
+}
+.dealbox{
+ width:100%;
+ height: auto;
+ display: grid;
+ grid-template-rows: 1fr;
+ grid-template-columns: repeat(6,1fr);
+ gap: 10px;
+}
+
+body{
+ margin:100px;
+}
+.dealImg{
+ width:100%;
+}
+.divider{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    
+   }
+.productcard{
+    width:100%;
+   margin:150px 5px;
+    display: block;
+   }
+   .categoryitems{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(6,1fr);
+    height: auto;
+    width: auto;
+    gap: 8px;
+   }
+   .shopCategory{
+   color: #000000;
+   text-align: center;
+   font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+   font-weight: bold;
+   line-height: 2;
+   margin-top: 10px;
+   }
+   .offerimg{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+   }
+   
+   .teen{
+    width:100%;
+    height: auto;
+   }
+   
+   .topselling{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+   }
+   .flashsale{
+    width:100%;
+   margin:20px 5px;
+    display: block;
+    
+   }
+   .beststeals{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+   }
+   .beststealsdiv{
+    width:100%;
+    height: auto;
+   }
+   #departmentitems{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+   }
+   
+   .departmentdiv{
+    width:100%;
+    height: auto;
+   }
+   /* .shopnow{
+    padding: 20px;
+    width: 60%;
+   
+   
+     
+   } */
+   .shopnowstyle{
+    background-color: white;
+    border: 1px solid rgb(223, 194, 194);
+    color: orange;
+    padding: 10px;
+    width: 40%;
+
+   }
+   .mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+* {
+    font-family: ProximaNova-Bold, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji";
+  }
+
+  #footer {
+    /* height: 600px; */
+    width: 100%;
+    /* border: 2px solid blue; */
+  }
+
+  /* #footMid > div > h4 {
+  } */
+
+  #footMid > div > p {
+    color: grey;
+    font-size: 14px;
+  }
+
+  #grandPapa {
+    height: 200px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+  }
+
+  #grandPapa > div {
+    height: 220px;
+    width: 43%;
+    /* border: 2px solid green; */
+    margin-left: 4%;
+  }
+
+  .sir {
+    font-family: ProximaNova-Bold, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 23px;
+    font-weight: 550;
+    margin-top: 50px;
+  }
+
+  .sir2 {
+    font-family: ProximaNova-Bold, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 18px;
+    color: grey;
+    font-weight: 400;
+  }
+
+  #aalu {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  #aalu > div > input {
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    background-color: #f7f8f7;
+    border: 1px solid lightgray;
+  }
+
+  #aalu > div > button {
+    height: 44px;
+    width: 150px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: 0px;
+  }
+
+  #gplay {
+    height: 180px;
+    display: flex;
+  }
+
+  #gplay > div > img {
+    width: 180px;
+  }
+
+  .popat {
+    height: 70px;
+    margin-top: 8px;
+  }
+
+  .popat2 {
+    margin-top: 16px;
+    margin-left: 20px;
+  }
+
+  #footMid {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  #footMid > div {
+    /* border: 2px solid black; */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+
+  #footBottom {
+    height: 60px;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    /* border: 2px solid tomato; */
+  }
+
+  #footBottom > div {
+    display: flex;
+    /* margin-left: 30px; */
+  }
+
+  #footicon > div > img {
+    height: 60px;
+  }
+
+  #footicon > div > h1 {
+    font-size: 16px;
+    margin-top: -16px;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+
+  #footicon > div > h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  #footla {
+    display: flex;
+  }
+
+  #footla > div > img {
+    height: 50px;
+    width: 150px;
+    margin-left: 10%;
+  }
+
+  #footla > div > h2 {
+    margin-left: 40px;
+    font-size: 14px;
+  }
+  
+  #container{
+    padding-left: 0px;
+
+margin: auto; 
+}
+
+#box1{
+  background-color: rgb(0,0,0);
+  display: flex;
+  gap: 20px;
+  /* padding-left: 30px; */
+ 
+  /* gap: 20px; */
+  
+  
+}
+#lifestyle>img{
+  height: 60px;
+  width: 190px;
+
+}
+#box2{
+  background-color: rgb(0,0,0);
+  display: flex;
+  gap: 20px;
+  margin-right: 30px;
+ 
+
+}
+#first{
+  display: flex;
+  gap: 5px;
+}
+#second{
+  display: flex;
+  gap: 5px;
+}
+#third{
+  display: flex;
+  gap: 5px;
+}
+#box1>div> h4{
+  color: rgb(255,255,255);
+}
+#flex1{
+  display: flex;
+  justify-content: space-between;
+  background-color:rgb(0,0,0) ;
+  color:rgb(255,255,255);
+  }
+.border>h5{ 
+   /* display: flex; */
+   /* border-right: 3px solid white; */
+   /* height: 20px; */
+   /* gap: 20px;  */
+   align-items: center;
+   margin-left: 40px;
+   /* justify-content: space-between; */
+   /* justify-content: space-between; */
+
+}
+#shadow{
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  /* width: 60px; */
+  display: flex;
+  border: 3px solid white;
+  gap: 9px;
+  
+  
+
+}
+
+.line4{ 
+ 
+ /* border-right: 3px solid rgb(93,94,92); */
+ height: 20px;
+ gap: 20px; 
+ align-items: center; 
+ margin-left: 3px;
+ position: absolute;
+ right: 100px;
+ top: 30px;
+ 
+
+ /* justify-content: space-between; */
+
+}
+
+#flex2{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f8f7;
+  
+}
+#container>#flex2{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#flex2>div{
+  color: rgb(26,25,24);
+  
+
+}
+#box4{
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+#box3{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#basket{
+  display: flex;
+  gap: 10px;
+}
+.png{
+  margin-top: 20px;
+}
+/* new css */
+.free{
+  display: flex;
+  gap: 6px;
+}
+.click{
+  display: flex;
+  gap: 6px;
+}
+.return{
+  display: flex;
+  gap: 6px;
+}
+.png{
+  margin-top: 20px;
+}
+.line1{ 
+ 
+ border-right: 3px solid rgb(93,94,92);
+ height: 20px;
+ gap: 20px; 
+ align-items: center; 
+ margin-left: 3px;
+ position: absolute;
+ right: 200px;
+ top: 30px;
+}
+.line2{ 
+ 
+ border-right: 3px solid rgb(93,94,92);
+ height: 20px;
+ gap: 20px; 
+ align-items: center; 
+ margin-left: 3px;
+ position: absolute;
+ right: 80px;
+ top: 30px;
+}
+.png2{
+  margin-top: 9px;
+
+}
+/* .all{
+  padding-right: 10px;
+}
+ */
+
+
+
+#left{
+  display: flex;
+  gap: 30px;
+  margin-left: 50px;
+}
+#right{
+  display: flex;
+  gap: 40px;
+  margin-right: 20px;
+}
+
+#searchbar{
+  background-color: #ecedeb;
+  margin-left: 30px;
+  font-size: 16px;
+  height: 35px;
+  padding-left: 20px;
+  width: 400px;
+  border: 0px;
+}
+
+.border2{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+
+          /* Drop - Down Part */
+
+
+.dropbtn {
+background-color: white;
+/* color: white; */
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 450px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+/* background-color: #3e8e41; */
+border: 1px solid goldenrod;
+color: goldenrod;
+}
+
+#spang{
+float: right;
+}
+
+#patti{
+background-color:goldenrod;
+height: 40px;
+width: 100%;
+display: flex;
+}
+
+#patti > h2{
+color: white;
+font-family: sans-serif;
+text-align: center;
+margin: auto;
+font-weight: bold;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
