@@ -1,5 +1,6 @@
 # Lifestyle Store(Clone)
-Project: make a clone of https://www.lifestylestores.com/ site
+Project: make a clone of Lifestylestores site: 
+                   https://elastic-volhard-0f1c35.netlify.app/
 
 This a website where an user can be able to buy the premium clothes, and accessories..
 
