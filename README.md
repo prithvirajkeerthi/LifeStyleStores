@@ -7,7 +7,8 @@ This a website where an user can be able to buy the premium clothes, and accesso
 
 &nbsp;&nbsp;&nbsp;&#160;In this project we have tried to make a look alike clone of lifestylestore.com website. With our efforts and the technology stack, that we have learned till now in Unit-2 in the masai school, we were able to clone the front end with same looking & features. We used HTML, Css and simple Javascript in this project.
 
-
+## Description
+A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle. Lifestyle stores may include clothing, housewares, furniture, stationery, gifts, and so on.
 
 ## Technology Stack Used
 
